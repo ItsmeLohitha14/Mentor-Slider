@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #191919;
+}
+
+.mentors{
+    width: 700px;
+    display: flex;
+    overflow-x: scroll;
+}
+.mentors div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 50px;
+    flex: none;
+}
+
+.mentors div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: tranform 0.5s;
+}
+
+.mentors::-webkit-scrollbar{
+    display: none;
+}
+
+.mentors-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+.mentors div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
